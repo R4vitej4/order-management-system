@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "7937af56-4913-4e70-8323-d96094a7c746",
+		"name": "XHIPMENT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28704978"
+	},
+	"item": [
+		{
+			"name": "AUTH",
+			"item": [
+				{
+					"name": "REGISTER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"pegadaraviteja225@gmail.com\",\r\n    \"password\": \"raviteja\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/auth/register",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LOGIN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/auth/login",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "REFRESH TOKEN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"refreshToken\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/auth/refresh",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ORDERS",
+			"item": [
+				{
+					"name": "CREATE ORDERS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/orders/create",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ORDER DETAILS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/orders/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "INSERT DUMMY DATA",
+			"item": [
+				{
+					"name": "INSERT PRODUCTS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/insert_data/products",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"insert_data",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "INSERT INVENTORY",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/insert_data/inventory",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"insert_data",
+								"inventory"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://localhost:9000",
+			"type": "string"
+		}
+	]
+}
